@@ -676,10 +676,10 @@ def solvate(
     ----------
     solute : mb.Compound
         Compound to be placed in a box and solvated.
-    solvent : mb.Compound
-        Compound to solvate the box.
-    n_solvent : int
-        Number of solvents to be put in box.
+    solvent : mb.Compound or list of mb.Compound
+        Compound to solvate the box or a list of compounds.
+    n_solvent : int or list of int
+        Number of solvent compounds to be put in box.
     box : mb.Box
         Box to be filled by compounds.
     overlap : float, units nm, default=0.2
